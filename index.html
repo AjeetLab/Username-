@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ajeet Vishwakarma | AjeetBuild</title>
+
+<meta name="description" content="Ajeet Vishwakarma (AjeetBuild) - Developer, Creative Thinker and Digital Creator.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#080d19;
+    color:#ffffff;
+    line-height:1.7;
+}
+
+:root{
+    --primary:#00d9ff;
+    --secondary:#00ff88;
+    --card:#101a2d;
+    --text:#b8c5d9;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(8,13,25,0.95);
+    border-bottom:1px solid rgba(0,217,255,0.2);
+    backdrop-filter:blur(12px);
+}
+
+.nav-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:23px;
+    font-weight:bold;
+    color:var(--primary);
+}
+
+.nav-links{
+    display:flex;
+    gap:22px;
+}
+
+.nav-links a{
+    color:#cbd5e1;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
+}
+
+/* HERO */
+
+.hero{
+    min-height:600px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:90px 15px;
+    background:
+    radial-gradient(circle at top,rgba(0,217,255,0.13),transparent 45%);
+}
+
+.hero h1{
+    font-size:clamp(30px,6vw,55px);
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:var(--primary);
+    text-shadow:0 0 20px rgba(0,217,255,0.3);
+}
+
+.subtitle{
+    color:var(--secondary);
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+.typing{
+    color:var(--primary);
+    font-size:19px;
+    min-height:35px;
+    margin-bottom:30px;
+}
+
+.hero-description{
+    max-width:700px;
+    margin:auto;
+    color:var(--text);
+    font-size:16px;
+}
+
+.buttons{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:12px 25px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+    display:inline-block;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:#06111d;
+}
+
+.btn-outline{
+    border:1px solid var(--primary);
+    color:var(--primary);
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 5px 25px rgba(0,217,255,0.2);
+}
+
+/* STATS */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:45px;
+}
+
+.stat-box{
+    background:var(--card);
+    border:1px solid rgba(0,217,255,0.2);
+    padding:18px 30px;
+    border-radius:12px;
+    min-width:150px;
+}
+
+.stat-box h3{
+    font-size:27px;
+    color:var(--primary);
+}
+
+.stat-box p{
+    color:var(--text);
+    font-size:13px;
+}
+
+/* SECTIONS */
+
+section{
+    padding:75px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+.section-title span{
+    color:var(--primary);
+}
+
+.about-text{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    color:var(--text);
+    font-size:17px;
+}
+
+.about-text strong{
+    color:var(--primary);
+}
+
+.quote{
+    margin-top:30px;
+    padding:22px;
+    border-left:4px solid var(--primary);
+    background:var(--card);
+    border-radius:8px;
+    color:#fff;
+    font-style:italic;
+}
+
+/* INTEREST CARDS */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid rgba(0,217,255,0.13);
+    padding:25px;
+    border-radius:13px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    border-color:var(--primary);
+    box-shadow:0 8px 25px rgba(0,217,255,0.08);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.card p{
+    color:var(--text);
+    font-size:14px;
+}
+
+/* SKILLS */
+
+.skills{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:#101f34;
+    color:var(--primary);
+    padding:12px 23px;
+    border:1px solid rgba(0,217,255,0.25);
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.skill:hover{
+    background:var(--primary);
+    color:#08111e;
+    transform:scale(1.05);
+}
+
+/* GOAL */
+
+.goal{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    color:var(--text);
+    font-size:17px;
+}
+
+.goal h3{
+    color:var(--secondary);
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:35px 15px;
+    border-top:1px solid rgba(0,217,255,0.2);
+    color:var(--text);
+}
+
+footer strong{
+    color:var(--primary);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:650px){
+
+    .nav-content{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .nav-links{
+        gap:13px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav-links a{
+        font-size:12px;
+    }
+
+    .hero{
+        min-height:550px;
+    }
+
+    .section-title{
+        font-size:26px;
+    }
+
+    section{
+        padding:55px 0;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<div class="container nav-content">
+
+<div class="logo">AjeetBuild.</div>
+
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#interests">Interests</a>
+<a href="#skills">Skills</a>
+<a href="#github">GitHub</a>
+</div>
+
+</div>
+</nav>
+
+<!-- HERO -->
+
+<header class="hero" id="home">
+
+<div class="container">
+
+<h1>
+Hey there! I'm <span>Ajeet Vishwakarma</span>
+</h1>
+
+<div class="subtitle">
+Creative Thinker | Developer | Digital Creator
+</div>
+
+<div class="typing" id="typing"></div>
+
+<p class="hero-description">
+
+I'm a student, developer, video editor, and creative thinker passionate about technology, programming, and digital innovation.
+
+I enjoy transforming creative ideas into useful digital experiences and building projects that aim to solve real-world problems.
+
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-primary"
+href="https://github.com/ajit000000547"
+target="_blank" rel="noopener noreferrer">
+Follow Me on GitHub
+</a>
+
+<a class="btn btn-outline"
+href="https://github.com/ajit000000547?tab=repositories"
+target="_blank" rel="noopener noreferrer">
+Explore My Work
+</a>
+
+</div>
+
+<div class="stats">
+
+<div class="stat-box">
+<h3 id="followers">--</h3>
+<p>GitHub Followers</p>
+</div>
+
+<div class="stat-box">
+<h3 id="repos">--</h3>
+<p>Public Repositories</p>
+</div>
+
+<div class="stat-box">
+<h3 id="stars">--</h3>
+<p>Total Stars</p>
+</div>
+
+</div>
+
+</div>
+</header>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">
+About <span>Me</span>
+</h2>
+
+<div class="about-text">
+
+<p>
+Hello! I'm <strong>Ajeet Vishwakarma</strong>, also known as <strong>AjeetBuild</strong>.
+</p>
+
+<br>
+
+<p>
+I'm passionate about exploring technology, learning programming, creating digital products, and discovering new possibilities.
+</p>
+
+<br>
+
+<p>
+For me, development is not just about writing code. It's about understanding problems, thinking creatively, and building meaningful solutions.
+</p>
+
+<div class="quote">
+"Don't just imagine the future. Build something that makes it better."
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- INTERESTS -->
+
+<section id="interests">
+
+<div class="container">
+
+<h2 class="section-title">
+What I <span>Do</span>
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>💻 Web Development</h3>
+<p>Creating modern, responsive, and user-friendly websites.</p>
+</div>
+
+<div class="card">
+<h3>📱 App Development</h3>
+<p>Exploring useful applications and digital experiences.</p>
+</div>
+
+<div class="card">
+<h3>🤖 Artificial Intelligence</h3>
+<p>Discovering AI technology and intelligent digital tools.</p>
+</div>
+
+<div class="card">
+<h3>🎬 Video Editing</h3>
+<p>Creating engaging videos and visual content.</p>
+</div>
+
+<div class="card">
+<h3>🐍 Programming</h3>
+<p>Learning Python, JavaScript, and problem-solving.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Innovation</h3>
+<p>Turning creative ideas into practical digital solutions.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<div class="container">
+
+<h2 class="section-title">
+My <span>Skills</span>
+</h2>
+
+<div class="skills">
+
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">Python</span>
+<span class="skill">GitHub</span>
+<span class="skill">Git</span>
+<span class="skill">Web Development</span>
+<span class="skill">AI Exploration</span>
+<span class="skill">Video Editing</span>
+<span class="skill">Content Creation</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GOAL -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+My <span>Vision</span>
+</h2>
+
+<div class="goal">
+
+<h3>Think Creatively. Build Smartly. Innovate Continuously.</h3>
+
+<p>
+My goal is to become a creator who develops meaningful technology that makes a positive difference.
+</p>
+
+<br>
+
+<p>
+I believe every great achievement starts with curiosity, every skill grows through practice, and every innovation begins with an idea.
+</p>
+
+<br>
+
+<p>
+I want to keep learning, keep experimenting, and keep building digital experiences that are useful to people.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GITHUB -->
+
+<section id="github">
+
+<div class="container">
+
+<h2 class="section-title">
+GitHub <span>Profile</span>
+</h2>
+
+<div class="grid">
+
+<div class="card" style="text-align:center">
+
+<h3>GitHub Profile</h3>
+
+<p>Explore my repositories, contributions, and development journey.</p>
+
+<br>
+
+<a class="btn btn-primary"
+href="https://github.com/ajit000000547"
+target="_blank" rel="noopener noreferrer">
+Visit GitHub
+</a>
+
+</div>
+
+<div class="card" style="text-align:center">
+
+<h3>My Repositories</h3>
+
+<p>Discover my public projects, experiments, and creative work.</p>
+
+<br>
+
+<a class="btn btn-outline"
+href="https://github.com/ajit000000547?tab=repositories"
+target="_blank" rel="noopener noreferrer">
+Explore Repositories
+</a>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div class="card" style="text-align:center">
+
+<h3>GitHub Contribution Activity</h3>
+
+<br>
+
+<img
+src="https://ghchart.rshah.org/00d9ff/ajit000000547"
+alt="Ajeet's GitHub contribution chart"
+style="width:100%;max-width:850px;">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>Thanks for visiting my digital portfolio!</p>
+
+<br>
+
+<strong>Ajeet Vishwakarma | AjeetBuild</strong>
+
+<br><br>
+
+<p>Think • Create • Innovate • Build</p>
+
+<br>
+
+<p>© <span id="year"></span> AjeetBuild. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+// TYPING ANIMATION
+
+const messages = [
+"I Build Projects That Solve Real Problems.",
+"I Turn Creative Ideas Into Reality.",
+"I Create Useful Digital Experiences.",
+"I Explore AI And New Technologies.",
+"I Believe In Learning By Building."
+];
+
+let messageIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+const typingElement = document.getElementById("typing");
+
+function typeEffect(){
+
+const current = messages[messageIndex];
+
+typingElement.textContent = current.substring(0,charIndex);
+
+if(!deleting && charIndex < current.length){
+
+charIndex++;
+
+setTimeout(typeEffect,65);
+
+}else if(!deleting){
+
+deleting = true;
+
+setTimeout(typeEffect,1500);
+
+}else if(charIndex > 0){
+
+charIndex--;
+
+setTimeout(typeEffect,30);
+
+}else{
+
+deleting = false;
+messageIndex = (messageIndex + 1) % messages.length;
+
+setTimeout(typeEffect,400);
+
+}
+
+}
+
+typeEffect();
+
+
+// REAL GITHUB DATA
+
+async function loadGithubData(){
+
+try{
+
+const response = await fetch(
+"https://api.github.com/users/ajit000000547"
+);
+
+if(!response.ok) throw new Error("GitHub API unavailable");
+
+const data = await response.json();
+
+document.getElementById("followers").textContent =
+data.followers;
+
+document.getElementById("repos").textContent =
+data.public_repos;
+
+
+// Get total public repository stars
+
+const reposResponse = await fetch(
+"https://api.github.com/users/ajit000000547/repos?per_page=100"
+);
+
+if(!reposResponse.ok) throw new Error("Repository data unavailable");
+
+const repositories = await reposResponse.json();
+
+const totalStars = repositories.reduce(
+(total, repo) => total + repo.stargazers_count,
+0
+);
+
+document.getElementById("stars").textContent =
+totalStars;
+
+}catch(error){
+
+document.getElementById("followers").textContent = "N/A";
+document.getElementById("repos").textContent = "N/A";
+document.getElementById("stars").textContent = "N/A";
+
+console.log("GitHub data could not be loaded:",error);
+
+}
+
+}
+
+loadGithubData();
+
+
+// CURRENT YEAR
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+</script>
+
+</body>
+                               </html>
