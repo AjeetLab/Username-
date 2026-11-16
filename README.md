@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:09090F,40:312E81,100:06B6D4&height=220&section=header&text=AJEETBUILD&fontSize=65&fontColor=FFFFFF&fontAlignY=38&desc=BUILD%20%E2%80%A2%20CODE%20%E2%80%A2%20INNOVATE&descSize=17&descAlignY=58&animation=fadeIn"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:09090F,40:312E81,100:06B6D4&height=220&section=header&text=AJEETLab&fontSize=65&fontColor=FFFFFF&fontAlignY=38&desc=BUILD%20%E2%80%A2%20CODE%20%E2%80%A2%20INNOVATE&descSize=17&descAlignY=58&animation=fadeIn"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Hey+there!+I+am+Ajeet+Vishwakarma;Welcome+to+my+Digital+Space;Developer+%7C+Creator+%7C+Innovator;Turning+Ideas+Into+Reality"/>
 
